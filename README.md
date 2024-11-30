@@ -22,7 +22,7 @@ Além disso, foram elaborados os seguintes diagramas para auxiliar no desenvolvi
 - **DER (Diagrama Entidade-Relacionamento)**
 
 ## **Diagramas**
-Os diagramas estão apresentados abaixo no arquivo do projeto.
+Os diagramas estão apresentados abaixo no arquivo do projeto, para velos acesse o PDF.
 
 ### DFD
 Representa o fluxo de dados entre as entidades, processos e armazenamento.
