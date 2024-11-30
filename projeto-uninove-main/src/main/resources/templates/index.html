@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous">
+        function redirectToLogin() {
+          window.location.href = "/cadastro";
+      }
+      function redirectToPlanos() {
+          // Redirecionar para a rota de planos
+          window.location.href = "/planos";
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Academia</title>
+</head>
+<body>
+<header>
+    <div class="menu-content">
+        <h1 class="logo"> Academia ADS</h1>
+        <nav class="header-menu">
+            <ul class="list-itens">
+                <li><a href="/">home</a></li>
+                <li><a href="cadastro">Cadastre-se</a></li>
+                <li><a href="contatos">contatos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="main-content">
+        <h1 class="primary-text">Quem tem um objetivo, não tem desculpas. Foque e treine com determinação!</h1>
+        <h2 class="second-text">SE INSCREVA AGORA E MUDE DE VIDA</h2>
+        <div class="btns">
+            <button class="btn-exp" onclick="redirectToLogin()">Inscreva-se</button>
+            <button class="btn-personal" onclick="redirectToPlanos()">Nossos planos</button>
+        </div>
+    </div>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "/cadastro";
+        }
+
+        function redirectToPlanos() {
+            window.location.href = "/planos";
+        }
+    </script>
+</main>
+</body>
+</html>

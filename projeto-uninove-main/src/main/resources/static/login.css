@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url("img/academia.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 1px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #fff;
+}
+
+
+
+input{
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+
+}
+
+
+button {
+    background-color: yellow;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color:#090909;
+    font-size: 20px ;
+}
+
+button:hover {
+    background-color: #7a7a07;
+    cursor: pointer;
+}
+

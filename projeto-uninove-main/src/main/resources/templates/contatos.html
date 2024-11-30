@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contatos</title>
+</head>
+<body>
+<header>
+    <div class="menu-content">
+        <h1 class="logo"> Academia ADS</h1>
+        <nav class="header-menu">
+            <ul class="list-itens">
+                <li><a href="/">home</a></li>
+                <li><a href="cadastro">Cadastre-se</a></li>
+                <li><a href="planos">Planos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <br>
+    <div class="container">
+        <div class="form_box">
+            <h2 class="title">Envie sua mensagem</h2>
+            <form th:action="@{/enviar-mensagem}" method="post">
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu e-mail">
+                <input type="text" name="assunto" placeholder="Assunto">
+                <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+

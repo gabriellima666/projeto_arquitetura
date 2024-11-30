@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Zerando CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fundo-tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url("img/academia.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 1px;
+    background-repeat: no-repeat;
+
+}
+
+/* Menu - Header - NavBar */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.2);
+}
+
+form {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+label, input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(251, 255, 0);
+    transition: all 1.5s ease; 
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteudo Principal */
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Textos conteudo principal */
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.thumbnail {
+    border: 1px solid #ddd;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.caption {
+    text-align: center;
+}
+
+.caption p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+/* Botões */
+
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgb(251, 255, 0);
+    border: none;
+}
+
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+
+
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/*contatos*/
+body,
+textarea{
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+}
+
+.form_box{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 700px;
+}
+
+.form_box .title{
+    padding: 24px 32px;
+    font-size: 24px;
+    border-bottom: thin solid #ccc;
+}
+
+
+.form_box form{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 32px ;
+}
+
+.form_box input,
+.form_box textarea{
+    width: 200px;
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.form_box input:first-child{
+    margin-right: 16px;
+
+}
+
+.form_box input[name=subject]{
+    width: 100%;
+}
+
+.form_box textarea{
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+
+.form_box button{
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: gold;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form_box button:hover{
+    background-color: rgb(255, 255, 255);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #3f3e3e;
+    border-radius: 8px;
+    width: 700px;
+    margin: auto; /* Adicionado para centralizar horizontalmente */
+    margin-top: 65px; /* Adicionado para dar algum espaço acima do formulário */
+}
+
+/*Planos*/
+.tabela-preco{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: min(1600px, 100%);
+    margin: auto;
+}
+
+
+.card-preco{
+    flex: 1;
+    max-width: 360px;
+    background-color: #fff;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color:black;
+    transition: .3s linear;
+
+}
+
+.card-preco:hover .card-preco-header{
+    box-shadow: 0 0 0 26em black;
+}
+
+.card-preco-header{
+    background-color: gold;
+    display: inline-block;
+    color:#fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s line;
+    
+}
+
+.preco{
+    font-size: 70px;
+    color: gold;
+    transition: .2s linear;
+}
+
+
+.preco sup, .preco span{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.card-preco:hover,  .card-preco:hover .preco{
+    color: #fff;
+
+}
+
+.card-preco li{
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 95px;
+    border: 2px solid gold;
+    color:black;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+.btn:hover{
+    background-color: gold;
+    color: black;
+
+    
+}
+
+@media screen and(max-width:1100px){
+    .card-preco{
+        flex:50%;
+    }
+}
